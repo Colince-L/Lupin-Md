@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Colince-L/Lupin-Md.git  /root/Colince-L
-WORKDIR /root/Colince-L/
+RUN git clone https://github.com/Colince-L/Lupin-Md  /root/Lupin
+WORKDIR /root/Lupin/
 
 
 COPY package.json .
